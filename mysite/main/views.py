@@ -29,3 +29,7 @@ def notice_remove(request,pk):
         notice = Notice.objects.get(pk=pk)
         notice.delete()
     return redirect('/notice/')
+
+def program(request):
+	programList = Program.objects.all()
+	return render(request, 'main/program.html',{'programList':programList})

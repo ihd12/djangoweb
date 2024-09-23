@@ -10,4 +10,5 @@ urlpatterns = [
     path('notice/<int:pk>',notice_view),
     path('notice/add/',notice_add),
     path('notice/remove/<int:pk>', notice_remove),
+    path('program', program),
 ]
